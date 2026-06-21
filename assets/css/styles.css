@@ -151,6 +151,8 @@ h1 {
 
 .prompt-stage {
   position: relative;
+  display: flex;
+  flex-direction: column;
   min-height: 0;
   padding: clamp(20px, 2.4vw, 38px);
   border: 1px solid rgba(255, 255, 255, 0.72);
@@ -158,6 +160,16 @@ h1 {
   background: rgba(255, 255, 255, 0.8);
   box-shadow: var(--shadow);
   overflow: hidden;
+}
+
+.prompt-status-row {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px 20px;
+  flex: 0 0 auto;
 }
 
 .visual-band {
@@ -221,6 +233,7 @@ h1 {
 
 .prompt-output {
   position: relative;
+  flex: 1 1 auto;
   max-width: 1080px;
   min-height: 0;
   max-height: calc(100dvh - 190px);
@@ -276,13 +289,12 @@ h1 {
 }
 
 .completion-banner {
-  position: absolute;
-  right: 32px;
-  bottom: 28px;
+  position: relative;
   display: grid;
   gap: 3px;
-  min-width: 280px;
-  padding: 16px 18px;
+  min-width: 260px;
+  margin-bottom: 12px;
+  padding: 10px 14px;
   border: 1px solid rgba(201, 145, 44, 0.45);
   border-radius: 8px;
   background: rgba(255, 252, 243, 0.92);
@@ -299,7 +311,7 @@ h1 {
 
 .completion-banner strong {
   color: var(--blue);
-  font-size: 1.2rem;
+  font-size: 1.05rem;
 }
 
 .operator-panel {

@@ -7,6 +7,7 @@
   <meta name="description" content="Διαδραστική δίγλωσση εφαρμογή για τη συλλογική δημιουργία ενός έργου τέχνης με Τεχνητή Νοημοσύνη στο TECH-EDU 2026 και DSAI 2026.">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <meta name="theme-color" content="#114d7d">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'self'">
 
   <link rel="canonical" href="https://labschool-gr.github.io/collaborative-ai-artwork-prompt/">
   <link rel="preload" href="assets/images/stage-accent.webp" as="image" type="image/webp">
@@ -61,17 +62,19 @@
         <span></span>
       </div>
 
-      <div class="current-team">
-        <span id="teamNumber">Team 1</span>
-        <strong id="teamTitle">Future of Learning</strong>
+      <div class="prompt-status-row">
+        <div class="current-team">
+          <span id="teamNumber">Team 1</span>
+          <strong id="teamTitle">Future of Learning</strong>
+        </div>
+
+        <div class="completion-banner" id="completionBanner" hidden>
+          <span data-i18n="complete">Collaborative prompt complete</span>
+          <strong data-i18n="ready">Ready for generation</strong>
+        </div>
       </div>
 
       <article class="prompt-output" id="promptOutput" aria-label="Live prompt"></article>
-
-      <div class="completion-banner" id="completionBanner" hidden>
-        <span data-i18n="complete">Collaborative prompt complete</span>
-        <strong data-i18n="ready">Ready for generation</strong>
-      </div>
     </section>
 
     <aside class="operator-panel" id="operatorPanel" aria-label="Operator controls">
