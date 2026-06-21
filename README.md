@@ -20,7 +20,8 @@ For projection, use browser fullscreen mode with `F11`, then use the in-page pro
 - `assets/css/styles.css` - layout and visual styling
 - `assets/js/app.js` - prompt flow, typewriter effect and localStorage
 - `assets/images/logo-env.png` - association logo
-- `assets/images/stage-accent.bmp` - visual background accent
+- `assets/images/stage-accent.webp` - optimized visual background accent
+- `assets/images/social-preview.jpg` - Open Graph preview for social sharing
 
 ## Storage
 

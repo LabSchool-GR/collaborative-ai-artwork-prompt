@@ -32,7 +32,7 @@ body {
   color: var(--ink);
   background:
     linear-gradient(110deg, rgba(248, 246, 239, 0.95), rgba(228, 237, 235, 0.88)),
-    url("../images/stage-accent.bmp") top center / cover fixed;
+    url("../images/stage-accent.webp") top center / cover fixed;
   overflow: auto;
 }
 
