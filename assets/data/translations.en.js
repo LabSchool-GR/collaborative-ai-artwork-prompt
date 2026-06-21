@@ -22,6 +22,7 @@ window.AppTranslations.en = {
     export: "Export",
     reset: "Reset",
     presentation: "Presentation",
+    documentation: "Application Documentation",
     placeholder: "waiting for",
     copied: "Copied",
     exported: "Exported",

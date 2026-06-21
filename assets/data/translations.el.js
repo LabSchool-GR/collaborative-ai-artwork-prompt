@@ -22,6 +22,7 @@ window.AppTranslations.el = {
     export: "Εξαγωγή",
     reset: "Μηδενισμός",
     presentation: "Παρουσίαση",
+    documentation: "Τεκμηρίωση Εφαρμογής",
     placeholder: "αναμονή για",
     copied: "Αντιγράφηκε",
     exported: "Έγινε εξαγωγή",

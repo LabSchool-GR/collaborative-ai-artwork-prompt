@@ -78,7 +78,7 @@ button:disabled {
   min-height: 620px;
   display: grid;
   grid-template-columns: minmax(0, 1fr) clamp(320px, 28vw, 380px);
-  grid-template-rows: auto minmax(0, 1fr);
+  grid-template-rows: auto minmax(0, 1fr) auto;
   gap: clamp(12px, 1.3vw, 18px);
   padding: clamp(14px, 1.7vw, 24px);
   backdrop-filter: blur(5px);
@@ -437,6 +437,29 @@ h1 {
   border-color: var(--line);
 }
 
+.app-footer {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 16px;
+  font-size: 0.72rem;
+  line-height: 1;
+}
+
+.app-footer a {
+  color: rgba(21, 33, 47, 0.58);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color 140ms ease, border-color 140ms ease;
+}
+
+.app-footer a:hover,
+.app-footer a:focus-visible {
+  color: var(--blue);
+  border-bottom-color: currentColor;
+}
+
 .projection .stage-shell {
   grid-template-columns: minmax(0, 1fr);
 }
@@ -467,7 +490,8 @@ h1 {
 .presentation-view .operator-panel,
 .presentation-view .stage-actions,
 .presentation-view .current-team,
-.presentation-view .completion-banner {
+.presentation-view .completion-banner,
+.presentation-view .app-footer {
   display: none;
 }
 
