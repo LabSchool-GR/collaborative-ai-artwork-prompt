@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Dimitrios Kanatas">
+  <title>Συλλογική Δημιουργία Έργου Τέχνης με Τεχνητή Νοημοσύνη</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <main class="stage-shell">
+    <section class="stage-header" aria-label="Activity status">
+      <div class="brand-cluster">
+        <img class="association-logo" src="assets/images/logo-env.png" alt="Technology Association of Thrace">
+        <div>
+          <p class="event-kicker">TECH-EDU 2026 / DSAI 2026</p>
+          <h1 data-i18n="title">Συλλογική Δημιουργία Έργου Τέχνης με Τεχνητή Νοημοσύνη</h1>
+        </div>
+      </div>
+      <div class="stage-actions">
+        <div class="language-toggle" role="group" aria-label="Language">
+          <button class="toggle-button active" type="button" data-language="en">EN</button>
+          <button class="toggle-button" type="button" data-language="el">EL</button>
+        </div>
+        <button class="icon-button" id="projectionToggle" type="button" title="Projection mode" aria-label="Projection mode">
+          ⛶
+        </button>
+      </div>
+    </section>
+
+    <section class="prompt-stage" aria-live="polite">
+      <div class="visual-band" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="current-team">
+        <span id="teamNumber">Team 1</span>
+        <strong id="teamTitle">Future of Learning</strong>
+      </div>
+
+      <article class="prompt-output" id="promptOutput" aria-label="Live prompt"></article>
+
+      <div class="completion-banner" id="completionBanner" hidden>
+        <span data-i18n="complete">Collaborative prompt complete</span>
+        <strong data-i18n="ready">Ready for generation</strong>
+      </div>
+    </section>
+
+    <aside class="operator-panel" id="operatorPanel" aria-label="Operator controls">
+      <div class="panel-section">
+        <div class="progress-row">
+          <span id="progressLabel">0 / 10</span>
+          <span id="statusLabel" data-i18n="waiting">Waiting to start</span>
+        </div>
+        <div class="progress-track" aria-hidden="true">
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
+      </div>
+
+      <div class="panel-section team-card">
+        <p id="missionLabel" class="mission-label">Mission</p>
+        <h2 id="operatorTeamTitle">Team 1 / Future of Learning</h2>
+        <p id="operatorMission">
+          Choose one word or very short phrase that represents the future of learning.
+        </p>
+      </div>
+
+      <form class="word-form" id="wordForm">
+        <label for="teamWord" data-i18n="wordLabel">Team word</label>
+        <div class="word-entry">
+          <input id="teamWord" name="teamWord" type="text" autocomplete="off" maxlength="80" placeholder="Type the chosen word">
+          <button class="primary-button" id="lockButton" type="submit" data-i18n="lock">Lock word</button>
+        </div>
+      </form>
+
+      <div class="control-grid">
+        <button type="button" id="startButton" data-i18n="start">Start</button>
+        <button type="button" id="pauseButton" data-i18n="pause">Pause</button>
+        <button type="button" id="previousButton" data-i18n="previous">Previous</button>
+        <button type="button" id="nextButton" data-i18n="next">Next</button>
+      </div>
+
+      <div class="speed-control">
+        <label for="speedRange" data-i18n="speed">Typing speed</label>
+        <input id="speedRange" type="range" min="12" max="90" value="38">
+      </div>
+
+      <div class="utility-row">
+        <button type="button" id="copyButton" data-i18n="copy">Copy prompt</button>
+        <button type="button" id="exportButton" data-i18n="export">Export</button>
+        <button type="button" id="resetButton" data-i18n="reset">Reset</button>
+      </div>
+
+      <button class="presentation-button" type="button" id="presentationButton" data-i18n="presentation" disabled>
+        Presentation
+      </button>
+    </aside>
+  </main>
+
+  <script src="assets/data/activity-config.js"></script>
+  <script src="assets/data/translations.en.js"></script>
+  <script src="assets/data/translations.el.js"></script>
+  <script src="assets/data/prompt-templates.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

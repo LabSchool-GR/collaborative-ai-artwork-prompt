@@ -1,0 +1,26 @@
+# Internal source documents and event materials
+Docs/
+
+# Local editor and agent metadata
+.vscode/
+.idea/
+.codex/
+.agents/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Environment, temporary and backup files
+.env
+.env.*
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+*~
+
+# Local exports
+collaborative-ai-artwork-prompt.json
